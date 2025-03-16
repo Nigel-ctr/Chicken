@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+</style>
+    <title>FEED MY CHICKEN</title>
+</head>
+<body>
+        <p>the CHICKEN needs you</p>
+         <p>FEED ME</p>
+<style>
+    html {
+        cursor: url(https://images.app.goo.gl/y4BGN51EZgGGVis29.png"), auto;
+    }
+</style>
+
+ <div class="container" 
+         style="text-align: center; margin-top: 5em;">
+        <img src = "https://codehs.com/uploads/b6e57e4d049434fe979a9794dabf3704" alt="Chicken was here" width="100px" height="100px"
+            onclick="enlargeImg()"
+            id="img1" />
+        <br><br><br>
+
+        <button onclick="resetImg()">Reset</button>
+    </div>
+
+    <!-- script to set display property -->
+    <script>
+        img = document.getElementById("img1");
+      
+        function enlargeImg() {
+            img.style.transform = "scale(0.25)";
+            img.style.transition = "transform 0.25s ease";
+        }
+      
+        // Function to reset image size
+        function resetImg() {
+            img.style.transform = "scale(1)";
+            img.style.transition = "transform 0.25s ease";
+        }
+    </script>
+</body>
+</html>
